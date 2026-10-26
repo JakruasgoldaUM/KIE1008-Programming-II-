@@ -34,6 +34,131 @@
         "cwd": "${fileDirname}"
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Build W02C01",
+      "type": "process",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-I",
+        "${workspaceFolder}\\Lecture\\W2\\W02C01\\Header",
+        "${workspaceFolder}\\Lecture\\W2\\W02C01\\Source\\main.cpp",
+        "${workspaceFolder}\\Lecture\\W2\\W02C01\\Source\\Time.cpp",
+        "-o",
+        "${workspaceFolder}\\Lecture\\W2\\W02C01\\W02C01.exe"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Run W02C01",
+      "type": "process",
+      "command": "${workspaceFolder}\\Lecture\\W2\\W02C01\\W02C01.exe",
+      "dependsOn": "Build W02C01",
+      "dependsOrder": "sequence",
+      "options": {
+        "cwd": "${workspaceFolder}\\Lecture\\W2\\W02C01"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build W03C02",
+      "type": "process",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-I",
+        "${workspaceFolder}\\Lecture\\W3\\W03C02\\Header",
+        "${workspaceFolder}\\Lecture\\W3\\W03C02\\Sources\\main.cpp",
+        "${workspaceFolder}\\Lecture\\W3\\W03C02\\Sources\\Data.cpp",
+        "${workspaceFolder}\\Lecture\\W3\\W03C02\\Sources\\Employee.cpp",
+        "-o",
+        "${workspaceFolder}\\Lecture\\W3\\W03C02\\W03C02.exe"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Run W03C02",
+      "type": "process",
+      "command": "${workspaceFolder}\\Lecture\\W3\\W03C02\\W03C02.exe",
+      "dependsOn": "Build W03C02",
+      "dependsOrder": "sequence",
+      "options": {
+        "cwd": "${workspaceFolder}\\Lecture\\W3\\W03C02"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build W03C04",
+      "type": "process",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-I",
+        "${workspaceFolder}\\Lecture\\W3\\W03C04\\Header",
+        "${workspaceFolder}\\Lecture\\W3\\W03C04\\Source\\main.cpp",
+        "${workspaceFolder}\\Lecture\\W3\\W03C04\\Source\\Interface.cpp",
+        "-o",
+        "${workspaceFolder}\\Lecture\\W3\\W03C04\\W03C04.exe"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Run W03C04",
+      "type": "process",
+      "command": "${workspaceFolder}\\Lecture\\W3\\W03C04\\W03C04.exe",
+      "dependsOn": "Build W03C04",
+      "dependsOrder": "sequence",
+      "options": {
+        "cwd": "${workspaceFolder}\\Lecture\\W3\\W03C04"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build W04C06",
+      "type": "process",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-I",
+        "${workspaceFolder}\\Lecture\\W4\\W04C06\\Header",
+        "${workspaceFolder}\\Lecture\\W4\\W04C06\\Source\\main.cpp",
+        "${workspaceFolder}\\Lecture\\W4\\W04C06\\Source\\complex.cpp",
+        "-o",
+        "${workspaceFolder}\\Lecture\\W4\\W04C06\\W04C06.exe"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Run W04C06",
+      "type": "process",
+      "command": "${workspaceFolder}\\Lecture\\W4\\W04C06\\W04C06.exe",
+      "dependsOn": "Build W04C06",
+      "dependsOrder": "sequence",
+      "options": {
+        "cwd": "${workspaceFolder}\\Lecture\\W4\\W04C06"
+      },
+      "problemMatcher": []
     }
   ]
 }

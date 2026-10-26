@@ -1,0 +1,29 @@
+Original code with explanations for each error:
+
+class student ( ) // Error: A class name cannot be followed by parentheses.
+                  // Correction: Write "class student".
+{
+public:
+    bool canGraduate(); // Correct: Declares a member function.
+    void print() const; // Correct: Declares a const member function.
+    void student(int = 0, double = 0); // Error: A constructor cannot have a return type.
+                                       // Correction: Remove "void".
+private; // Error: "private" must end with a colon, not a semicolon.
+         // Correction: Write "private:" to begin the private section.
+    int ID; // These fields are intended to be private.
+    double gpa; // Put them after the corrected "private:" label.
+};
+
+
+Corrected code:
+class student
+{
+public:
+    bool canGraduate();
+    void print() const;
+    student(int = 0, double = 0);
+
+private:
+    int ID;
+    double gpa;
+};

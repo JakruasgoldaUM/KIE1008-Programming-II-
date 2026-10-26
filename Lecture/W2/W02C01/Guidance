@@ -1,0 +1,9 @@
+To build and run this folder in VS Code:
+
+1. Open the repository workspace in VS Code.
+2. Select Terminal > Run Task...
+3. Choose "Run W02C01".
+
+This task compiles Source/main.cpp and Source/Time.cpp together, using the
+Header folder for ClockTime.h, then runs W02C01.exe. Do not use "Run C/C++
+File" for this folder because it builds only the currently active source file.

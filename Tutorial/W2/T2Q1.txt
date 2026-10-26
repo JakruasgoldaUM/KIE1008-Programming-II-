@@ -1,0 +1,39 @@
+Incorrect code with syntax explanations:
+
+class discover() // Error: A class name cannot be followed by parentheses.
+                  // Correction: Write "class discover".
+{
+public:
+    set(string, int, double); // Error: A function declaration needs a return type.
+                              // Correction: Add a return type, such as "void".
+    void print() const; // Correct syntax.
+    discover() const; // Error: A constructor cannot have a return type or const qualifier.
+                      // Correction: Remove "const", or declare a separate getter with a return type.
+    discover(string, int, double); // Correct syntax for a constructor.
+    set(string, int, double); // Error: Duplicate declaration; keep only one set declaration.
+private; // Error: An access label must end with a colon, not a semicolon.
+         // Correction: Write "private:".
+    string type; // Use std::string (and include <string>) to name the standard string type.
+    int l;
+    double w;
+} // Error: A class definition must end with a semicolon.
+  // Correction: Write "};".
+
+
+Corrected code:
+
+#include <string>
+
+class discover
+{
+public:
+    void set(std::string, int, double);
+    void print() const;
+    discover();
+    discover(std::string, int, double);
+
+private:
+    std::string type;
+    int l;
+    double w;
+};

@@ -1,0 +1,17 @@
+How to build and run W03C02
+
+In VS Code:
+1. Open the repository folder as your VS Code workspace.
+2. Select Terminal > Run Task...
+3. Choose "Run W03C02".
+4. The task builds the program and runs it. The executable is created as
+   W03C02.exe in this folder.
+
+To build and run from PowerShell at the repository root:
+
+g++ -std=c++17 -Wall -Wextra -pedantic -I "Lecture\W3\W03C02\Header" "Lecture\W3\W03C02\Sources\main.cpp" "Lecture\W3\W03C02\Sources\Data.cpp" "Lecture\W3\W03C02\Sources\Employee.cpp" -o "Lecture\W3\W03C02\W03C02.exe"
+if ($?) { & ".\Lecture\W3\W03C02\W03C02.exe" }
+
+The build command compiles all three source files together and adds the
+Header folder to the include path. Ensure g++ is installed and available
+in the terminal PATH.
