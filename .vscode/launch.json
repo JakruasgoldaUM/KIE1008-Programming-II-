@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/siowj/OneDrive/Documents/GitHub/KIE1008-Programming-II-/Tutorial/W1",
-      "program": "c:/Users/siowj/OneDrive/Documents/GitHub/KIE1008-Programming-II-/Tutorial/W1/build/Debug/outDebug",
+      "cwd": "c:/Users/siowj/OneDrive/Documents/GitHub/KIE1008-Programming-II-/Lecture/W4",
+      "program": "c:/Users/siowj/OneDrive/Documents/GitHub/KIE1008-Programming-II-/Lecture/W4/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

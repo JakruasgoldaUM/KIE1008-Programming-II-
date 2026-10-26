@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build active C++ file",
+      "type": "process",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-x",
+        "c++",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Run active C++ file",
+      "type": "process",
+      "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "dependsOn": "Build active C++ file",
+      "dependsOrder": "sequence",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
