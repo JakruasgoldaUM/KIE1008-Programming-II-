@@ -1,0 +1,36 @@
+# KIE1008 Programming II — Tutorial W3
+## Q1: Error Identification
+
+### Wrong code:
+```cpp
+class discover() // Error: Remove parentheses after the class name.
+{
+public:
+    set(string, int, double); // Error: Missing return type.
+    void print() const;
+    discover() const; // Error: Constructor cannot be const.
+    discover(string, int, double);
+    set(string, int, double); // Error: Duplicate declaration; missing return type.
+private; // Error: Use a colon instead of a semicolon.
+    string type;
+    int l;
+    double w;
+} // Error: Missing semicolon after class definition.
+```
+
+### Correct code:
+```cpp
+class discover
+{
+public:
+    void set(string, int, double);
+    void print() const;
+    discover();
+    discover(string, int, double);
+
+private:
+    string type;
+    int l;
+    double w;
+};
+```

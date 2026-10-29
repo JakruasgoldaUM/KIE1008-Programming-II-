@@ -1,0 +1,21 @@
+Wrong Code:
+class MyClass
+{
+    public:
+     myClass operator+(const int& obj); // ERROR on Line 4: Parameter type must be 'const myClass&' (not 'const int&') and function should be 'const' qualified
+     myClass (int = 0, int = 0);
+    private //Missing access specifier colon ":"
+     int a;
+     int b;
+};
+
+Corrected Code:
+class MyClass
+{
+    public:
+     myClass operator+(const myClass& obj) const; 
+     myClass (int = 0, int = 0);
+    private:
+     int a;
+     int b;
+};
