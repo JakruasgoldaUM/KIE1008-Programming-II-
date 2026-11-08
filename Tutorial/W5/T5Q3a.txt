@@ -1,0 +1,17 @@
+Wrong Code: 
+class hourlyEmployee: public class employee
+{
+  public::
+    void setData(string n = "", string d = "", int a = 0, double
+                  p = 0, double hrsWk = 0, double payRate = 0.0);
+    void setHoursWorked(double hrsWk) const;
+    double getHoursWorked() const;
+    void setHourlyPayRate(double payRate);
+    double getHourlyPayRate() const;
+    void setPay() const;
+    hourlyEmployee(string n = "", string d = "", int a = 0, double
+                   p = 0, double hrsWk = 0, double payRate = 0.0);
+ private;
+    double hoursWorked;
+    double hourlyPayRate;
+};
