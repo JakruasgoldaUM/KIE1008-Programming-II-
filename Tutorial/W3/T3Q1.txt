@@ -1,8 +1,3 @@
-# KIE1008 Programming II — Tutorial W3
-## Q1: Error Identification
-
-### Wrong code:
-```cpp
 class discover() // Error: Remove parentheses after the class name.
 {
 public:

@@ -1,5 +1,3 @@
-Incorrect code with syntax explanations:
-
 class discover() // Error: A class name cannot be followed by parentheses.
                   // Correction: Write "class discover".
 {

@@ -1,17 +1,34 @@
-Wrong Code: 
-class hourlyEmployee: public class employee
+class hourlyEmployee: public class employee // Error in Line 1: invalid inheritance syntax; write "class hourlyEmployee : public employee".
 {
-  public::
+  public:: // Error in line 3: access specifiers use one colon; write "public:".
     void setData(string n = "", string d = "", int a = 0, double
                   p = 0, double hrsWk = 0, double payRate = 0.0);
-    void setHoursWorked(double hrsWk) const;
+    void setHoursWorked(double hrsWk) const; // Error in Line 6: a setter changes the object, so it must not be const.
     double getHoursWorked() const;
     void setHourlyPayRate(double payRate);
     double getHourlyPayRate() const;
-    void setPay() const;
+    void setPay() const; // Error in Line 10: if this updates the employee's pay, it must not be const.
     hourlyEmployee(string n = "", string d = "", int a = 0, double
                    p = 0, double hrsWk = 0, double payRate = 0.0);
- private;
+ private; // Error in Line 13: access specifiers end with a colon; write "private:".
     double hoursWorked;
     double hourlyPayRate;
+};
+
+Corrected Code:
+class hourlyEmployee: public employee
+{
+  public:
+   void setData(string n = "", string d = "", int a = 0, double
+                p = 0, double hrsWk = 0, double payRate = 0.0);  
+   void setHoursWorked(double hrsWk);
+   double getHoursWorked() const;
+   void setHourlyPayRate(double payRate);
+   double getHourlyPayRate() const;
+   void setPay();
+   hourlyEmployee(string n = "", string d = "", int a = 0, double
+                   p = 0, double hrsWk = 0, double payRate = 0.0);
+  private:
+  double hoursWorked;
+  double hourlyPayRate;
 };
