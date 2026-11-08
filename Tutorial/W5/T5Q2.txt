@@ -1,0 +1,54 @@
+class smart 
+{
+    public:
+     void print () const;
+     void set(int, int);
+     int sum();
+     smart();
+     smart (int, int);
+    private:
+     int x;
+     int y;
+     int secret();
+};
+
+clas superSmart:public smart
+{
+   public:
+    void print() const;
+    void set(int, int, int);
+    int manipulate();
+    superSmart();
+    superSmart(int, int, int);
+   private:
+    int z;
+};
+
+Member functions below:
+a) int smart::sum()
+   {
+    return x + y + z;
+   }
+   Answer of a) with explanations:
+   Invalid. The variable z is a private data member of the derived class superSmart. 
+   The base class smart has no access to the private members of its derived class.
+
+b)void superSmart::set(int a, int b, int c)
+  {
+    smart::set(a, b);
+    z = c;
+  }
+  Answer of b) with explanations:
+  Valid. The derived class superSmart can correctly call the public member function smart::set(a,b) of 
+  its base class to set the inherited private variables. It can also directly access and assign a value 
+  to its own private member variable.
+
+ c)int main ()
+   {
+    cout << superSmart.sum() << superSmart.z << endl;
+   }
+   Answer of c) with explanations:
+   First, superSmart is a class name, not an instantiated object. A program must build an object from a 
+   class before it can call its member functions or access its data. Second, even if an object were used, 
+   z is a private data member of the superSmart class, meaning it cannot be accessed outside the class's scope, 
+   such as in main().
